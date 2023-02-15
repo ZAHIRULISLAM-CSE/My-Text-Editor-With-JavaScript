@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2f4d3d53c5.js" crossorigin="anonymous"></script>
+</head>
+<body class="h-screen">
+    <!-- text area section -->
+    <section class="bg-teal-400 w-3/4 mx-auto mt-12 h-4/5">
+        <header>
+            <h1 class="text-4xl text-center pt-5 mb-12">My Text Editor</h1>
+            <div class="flex flex-col gap-4 p-6 w-3/4 mx-auto  border  border-gray-900">
+                <div class="flex justify-between">
+                    <div>
+                        <i id="bold" class="fa-solid fa-bold"></i>
+                        <i id="italic" class="fa-solid fa-italic"></i>
+                        <i id="underline" class="fa-solid fa-underline"></i>
+                    </div>
+                    <div>
+                        <i id="align-left" class="fa-solid fa-align-left"></i>
+                        <i id="align-center" class="fa-sharp fa-solid fa-align-center"></i>
+                        <i id="align-right" class="fa-solid fa-align-right"></i>
+                    </div>
+                    <div>
+                        <input class="w-12" placeholder="pixel" type="number" value="16" name="" id="pixel-value" min="0">
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+                    </div>
+                </div>
+                <textarea class="w-full h-52 resize-none" name="" id="text-area"cols="30" rows="10"></textarea>
+            </div>
+        </header>
+    </section>
+<script src="./script.js"></script>
+</body>
+</html>
